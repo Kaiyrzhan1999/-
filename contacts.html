@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детский Мир Знаний - Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Детский Мир Знаний</h1>
+        <p>Увлекательное обучение для детей</p>
+    </header>
+
+    <nav class="nav">
+        <a href="main.html" class="nav-button">Главная</a>
+        <a href="games.html" class="nav-button">Игры</a>
+        <a href="about.html" class="nav-button">О нас</a>
+        <a href="contacts.html" class="nav-button active">Контакты</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="contacts-section">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contacts-container">
+                <div class="contact-info">
+                    <h3>Наши контакты</h3>
+                    <div class="info-item">
+                        <strong>Телефон:</strong>
+                        <p>+7 (XXX) XXX-XX-XX</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong>
+                        <p>info@detskiymir.ru</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Адрес:</strong>
+                        <p>г. Москва, ул. Примерная, д. 123</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Форма обратной связи</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Детский Мир Знаний. Все права защищены.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детский Мир Знаний - Игры</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Детский Мир Знаний</h1>
+        <p>Увлекательное обучение для детей</p>
+    </header>
+
+    <nav class="nav">
+        <a href="main.html" class="nav-button">Главная</a>
+        <a href="games.html" class="nav-button active">Игры</a>
+        <a href="about.html" class="nav-button">О нас</a>
+        <a href="contacts.html" class="nav-button">Контакты</a>
+    </nav>
+
+    <main class="main-content">
+        <div class="games-container">
+            <h2>Наши игры</h2>
+            <div class="game-tabs">
+                <button class="game-tab active" data-game="math">Умный счёт</button>
+                <button class="game-tab" data-game="words">Слова и буквы</button>
+                <button class="game-tab" data-game="memory">Найди пару</button>
+                <button class="game-tab" data-game="english">English Time</button>
+                <button class="game-tab" data-game="mathMaze">Математический лабиринт</button>
+                <button class="game-tab" data-game="animalGuess">Угадай животное</button>
+                <button class="game-tab" data-game="puzzle">Собери пазл</button>
+                <button class="game-tab" data-game="findDiff">Найди отличия</button>
+                <button class="game-tab" data-game="musicNotes">Музыкальные ноты</button>
+            </div>
+
+            <section class="game-section" id="math-game">
+                <h3>Игра "Умный счёт"</h3>
+                <div class="game-container">
+                    <div class="game-question">
+                        <h3>Вопрос:</h3>
+                        <p>Сколько будет 2 + 2?</p>
+                        <div class="game-options">
+                            <button class="game-option">3</button>
+                            <button class="game-option">4</button>
+                            <button class="game-option">5</button>
+                            <button class="game-option">6</button>
+                        </div>
+                        <div class="game-score">Очки: 0</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-section" id="words-game" style="display: none;">
+                <h3>Игра "Слова и буквы"</h3>
+                <div class="game-container">
+                    <div class="word-game">
+                        <p class="word-question">Составь слово из букв:</p>
+                        <div class="letter-container"></div>
+                        <input type="text" class="word-input" placeholder="Введите слово">
+                        <button class="check-word">Проверить</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-section" id="memory-game" style="display: none;">
+                <h3>Игра "Найди пару"</h3>
+            </section>
+
+            <section class="game-section" id="mathMaze-game" style="display: none;">
+                <h3>Игра "Математический лабиринт"</h3>
+                <div class="game-container">
+                    <div class="maze-game">
+                        <div class="maze-grid"></div>
+                        <div class="maze-controls">
+                            <button class="maze-button">Начать игру</button>
+                            <div class="maze-score">Очки: 0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-section" id="animalGuess-game" style="display: none;">
+                <h3>Игра "Угадай животное"</h3>
+                <div class="game-container">
+                    <div class="animal-game">
+                        <div class="animal-image"></div>
+                        <div class="animal-options"></div>
+                        <button class="animal-sound-button">Послушать звук</button>
+                        <div class="animal-score">Очки: 0</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-section" id="puzzle-game" style="display: none;">
+                <h3>Игра "Собери пазл"</h3>
+                <div class="game-container">
+                    <div class="puzzle-game">
+                        <div class="puzzle-board"></div>
+                        <div class="puzzle-controls">
+                            <button class="puzzle-button">Новый пазл</button>
+                            <div class="puzzle-timer">Время: 0:00</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-section" id="findDiff-game" style="display: none;">
+                <h3>Игра "Найди отличия"</h3>
+                <div class="game-container">
+                    <div class="diff-game">
+                        <div class="diff-images">
+                            <div class="diff-image-left"></div>
+                            <div class="diff-image-right"></div>
+                        </div>
+                        <div class="diff-controls">
+                            <div class="diff-counter">Найдено отличий: 0/5</div>
+                            <button class="diff-hint">Подсказка</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-section" id="musicNotes-game" style="display: none;">
+                <h3>Игра "Музыкальные ноты"</h3>
+                <div class="game-container">
+                    <div class="music-game">
+                        <div class="music-staff"></div>
+                        <div class="music-keyboard"></div>
+                        <div class="music-controls">
+                            <button class="music-play">Прослушать</button>
+                            <button class="music-check">Проверить</button>
+                            <div class="music-score">Очки: 0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-section" id="memory-game" style="display: none;">
+                <h3>Игра "Найди пару"</h3>
+                <div class="game-container">
+                    <div class="memory-grid"></div>
+                    <div class="memory-score">Попытки: 0</div>
+                </div>
+            </section>
+
+            <section class="game-section" id="english-game" style="display: none;">
+                <h3>English Time</h3>
+                <div class="game-container">
+                    <div class="english-game">
+                        <div class="word-card">
+                            <img src="" alt="word image" class="word-image">
+                            <p class="english-word">Apple</p>
+                        </div>
+                        <div class="translation-options">
+                            <button class="translation-option">Яблоко</button>
+                            <button class="translation-option">Банан</button>
+                            <button class="translation-option">Груша</button>
+                            <button class="translation-option">Апельсин</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Детский Мир Знаний. Все права защищены.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
